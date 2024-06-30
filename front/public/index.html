@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>小说网</title>
+    <link href="/lib/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet"/>
+    <link href="/lib/bootstrap/3.3.7/css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+    <script src="/lib/bootstrap/3.3.7/js/jquery.min.js"></script>
+    <script src="/lib/bootstrap/3.3.7/js/bootstrap.js"></script>
+  </head>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    *::-webkit-scrollbar {
+      width: 3px;
+      height: 10px;
+    }
+    *::-webkit-scrollbar-track {
+      background: rgb(179, 177, 177);
+      border-radius: 10px;
+    }
+    *::-webkit-scrollbar-thumb {
+      background: rgb(136, 136, 136);
+      border-radius: 10px;
+    }
+    *::-webkit-scrollbar-thumb:hover {
+      background: rgb(100, 100, 100);
+      border-radius: 10px;
+    }
+    *::-webkit-scrollbar-thumb:active {
+      background: rgb(68, 68, 68);
+      border-radius: 10px;
+    }
+    .el-table__body-wrapper {
+      padding-bottom: 10px;
+    }
+    .el-table__fixed-right::before, .el-table__fixed::before {
+      background-color: unset !important;
+    }
+    .avatar-uploader .el-upload {
+      border: 1px dashed #d9d9d9;
+      border-radius: 6px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    .avatar-uploader .el-upload:hover {
+      border-color: #409EFF;
+    }
+    .avatar-uploader-icon {
+      font-size: 28px;
+      color: #8c939d;
+      width: 178px;
+      height: 178px;
+      line-height: 178px;
+      text-align: center;
+    }
+    .avatar {
+      width: 178px;
+      height: 178px;
+      display: block;
+    }
+  </style>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
